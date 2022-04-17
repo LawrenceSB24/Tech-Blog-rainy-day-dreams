@@ -1,4 +1,4 @@
-// Taken from Mini-Project
+// Referenced from Mini-Project
 const router = require('express').Router();
 const { User } = require('../../models');
 
