@@ -1,0 +1,219 @@
+/* Style file for tech blog */
+/* Colors and fonts are different from original */
+/* Honestly was not a big fan of the original color scheme so modified it */
+
+:root {
+    --bg-color: rgb(216, 11, 235);
+    --jumbo-color: rgb(166, 88, 173);
+    --font-color: rgb(102, 28, 109);
+    --home-font: 'Lora';
+    --dash-font: 'My+Soul';
+    --comment-font: 'Playfair';
+    --box-shadow: 8px 5px 2px rgb(156, 109, 160);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--home-font);
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+nav {
+    display: flex;
+    padding: 30px 30px 5px 7px;
+}
+
+.nav-link {
+    margin-left: 15px
+}
+
+.title-container h1 {
+    background-color: aliceblue;
+    color: var(--font-color);
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+a,
+#logout {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a:hover {
+    color: cornsilk;
+}
+
+#submit {
+    border: rgb(124, 80, 128);
+    background-color: var(--bg-color);
+    color: var(--dash-font);
+    width: 100%;
+    margin: 15px;
+}
+
+.user-info {
+    float: right;
+}
+
+button:not(.logout) {
+    background-color: azure;
+    border: 0;
+    padding: 1%;
+    color: rgb(102, 28, 109);
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: aqua;
+    font-weight: bolder;
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+textarea,
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 134, 134);
+    width: 100%;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #0f407c;
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+h2 {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    padding: 10px;
+    margin: 0;
+}
+
+form > div {
+    margin-top: 2%;
+}
+
+form label {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: darkblue;
+    border-bottom: 1px solid #f0aeae;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+.delete-post-btn {
+    background-color: rgb(192, 23, 23);
+}
+
+.delete-post-btn:hover {
+    background-color: #f0aeae;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border: solid;
+    padding: 10px;
+}
+
+.post .title {
+    font-style: italic;
+    font-size: 90%;
+    color: var(--font-color);
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+
+.comments a {
+    columns: black;
+    font-weight: normal;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+#comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: indianred;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: 1px solid rgb(121, 113, 113);
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
