@@ -1,0 +1,40 @@
+{{!-- Handlebar for dashboard content --}}
+
+<h2>Create New Post</h2>
+
+<section class="new-post">
+    <form class="new-post-form">
+        <div>
+            <label for="post-title">Title</label>
+            <input type="text" id="post-title" name="post-title" />
+        </div>
+
+        <div>
+            <label for="post-description">Content</label>
+            <input type="text" id="post-description" name="post-description" />
+        </div>
+
+        <button type="submit" class="btn" id="submit">
+            <a href="/">Create</a>
+        </button>
+    </form>
+</section>
+
+<br>
+
+{{#if posts.length}}
+<h2>Your Post(s)</h2>
+
+<section class="form-box">
+    <ul>
+        {{#each posts as |post|}}
+            <li>
+                {{> post-info post}}
+                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+            </li>
+        {{/each}}
+    </ul>
+</section>
+{{/if}}
+
+<script src="../public/js/posts.js>

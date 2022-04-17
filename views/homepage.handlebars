@@ -1,0 +1,8 @@
+{{!-- Handlebar for displaying posts on the homepage --}}
+<ol>
+    {{#each posts as |post|}}
+    <li>
+        {{> post-content post}}
+    </li>
+    {{/each}}
+</ol>

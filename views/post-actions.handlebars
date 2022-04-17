@@ -1,0 +1,29 @@
+{{!-- Handlebar for post actions --}}
+
+<article>
+    <a href="/dashboard">&larr; Return to Dashboard</a>
+
+    <h2>Edit Post</h2>
+
+    <section class="form-box">
+        <form class="edit-post-form">
+            <div>
+                <div>Title</div>
+                <input name="post-title" type="text" value="{{post.title}}" />
+            </div>
+
+            <div>
+                <div>Content</div>
+                <input name="post-comment" type="text" value="{{post.post_description}}"/>
+            </div>
+
+            <button type="submit" id="submit">Update Post</button>
+            <button type="button" class="delete-post-btn" id="submit">Delete</button>
+        </form>
+    </section>
+</article>
+
+{{> comments post.comments}}
+
+<script src="../public/js/posts.js"></script>
+<script src="../public/js/comments.js"></script>
