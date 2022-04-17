@@ -1,0 +1,18 @@
+{{!-- Handlebar for content in a post --}}
+
+<article class="post">
+    <div class="title">
+        <a href="/post/{{id}}" target="_blank">
+            {{title}}
+            <span class="user-info">
+                {{user.username}} on {{format_date posted_at}}
+            </span>
+        </a>
+    </div>
+
+    <div class="comments">
+        <a href="/post/{{id}}">
+            {{post_description}}
+        </a>
+    </div>
+</article>
